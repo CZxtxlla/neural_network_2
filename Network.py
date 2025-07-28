@@ -100,8 +100,6 @@ class Network:
                 if i % 1000 == 0:
                     print(f"Epoch {epoch+1} Step {i}, Avg Loss: {total_loss / i:.5f}")
 
-                if i >= 10000:
-                    break
             learning_rate *= 0.95  # decay per epoch
 
     def evaluate(self, test_data):
